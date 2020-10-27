@@ -2,7 +2,7 @@
 
 # Approach: Suboptimal solution. Use stack to store each node. Along with each node store the (min, max) limits of its left nad right sub trees. For 
 # each node, if its value is between left (min, max) values of top stack node, make it left child of that top node, else if it satisfies right (min, 
-# max) limits, make it right child of that top node. If noth the cases are not satisfied then pop the top value and start comprison with new top node.
+# max) limits, make it right child of that top node. If both the cases are not satisfied then pop the top value and start comprison with new top node.
 # Finally, append the current node in stack with updated (min, max) limits.
 
 # Definition for a binary tree node.
